@@ -1,0 +1,18 @@
+// Navigation
+@mixin flex($mainax, $crossax) {
+  display: flex;
+  justify-content: $mainax;
+  align-items: $crossax;
+}
+
+// Form
+
+
+// Button
+
+
+
+//call function example
+//  .box { 
+//   @include position(absolute,  15px, 30px); 
+//  }

@@ -1,0 +1,29 @@
+
+// Skip to Main Link
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+  header nav ul {
+    @include flex(flex-end, center);
+    padding-top: 20px;
+    li {
+      padding-left: 20px;
+      a {
+        display: inline-block;
+        padding: 10px 0 0 10px;
+        color: $typo;
+        // This font does not match design
+      }
+    }
+  }
+
