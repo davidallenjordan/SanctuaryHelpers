@@ -13,17 +13,41 @@
   left: 0;
 }
 
-  header nav ul {
-    @include flex(flex-end, center);
-    padding-top: 20px;
-    li {
-      padding-left: 20px;
-      a {
-        display: inline-block;
-        padding: 10px 0 0 10px;
-        color: $typo;
-        // This font does not match design
-      }
+
+// Banner Images -- Index
+.index header {
+  height: 100vh;
+  background: url(../assets/header-home.jpg) no-repeat top right/cover;
+}
+
+.header-box {
+  width: 50%;
+  margin-top: 3%;
+}
+
+// Navigation Menu -- Global
+header nav ul {
+  @include flex(flex-end, center);
+  padding-top: 20px;
+  li {
+    padding-left: 20px;
+    a {
+      display: inline-block;
+      padding: 10px 0 0 10px;
     }
   }
+}
+
+// psuedo underline -- Index
+.index nav li:first-of-type a {
+  position: relative;
+  @include selected(65px);
+
+}
+
+h1 {
+  width: 70%;
+  padding: 4% 0 0 5%;
+}
+
 

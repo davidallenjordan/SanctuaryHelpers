@@ -16,3 +16,18 @@
 //  .box { 
 //   @include position(absolute,  15px, 30px); 
 //  }
+
+// Navigation pseudo underline 
+@mixin selected($width) {
+  &:after {
+    content: '';
+    display: block;
+    background: $shadow;
+    height: 2px;
+    width: $width;
+  
+    position: absolute;
+    bottom: 0;
+
+  }
+}

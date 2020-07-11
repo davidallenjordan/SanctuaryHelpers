@@ -3,7 +3,7 @@ h1, h2, h3, a, button {
   text-transform: uppercase;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, nav a {
   color: $typo;
 }
 
@@ -36,21 +36,23 @@ nav a {
   font-weight: 700;
 }
 
-nav a, button, p {
+nav a, .btn, p {
   font-size: 2rem;
 }
 
-nav a, button {
+nav a, .btn {
   text-align: center;
 }
 
-button, p {
+.btn, p {
   line-height: 3.2rem;
 }
 
-button {
+.btn {
   letter-spacing: 1px;
   color: $secondary;
+  background: $button;
+  font-family: $sub-head;
 }
 
 p {
