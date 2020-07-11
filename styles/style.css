@@ -466,4 +466,40 @@ h1 {
 
 .index .features {
   background: #E0FDDF;
+  position: relative;
+  padding: 100px 0 100px 0;
+}
+
+.index .features .features-image-container:first-of-type {
+  top: 0;
+  left: 0;
+}
+
+.index .features .features-image-container:first-of-type img {
+  -webkit-box-shadow: 25px 25px 0 -10px #F8FB05;
+          box-shadow: 25px 25px 0 -10px #F8FB05;
+}
+
+.index .features .features-image-container:last-of-type {
+  bottom: 0;
+  right: 0;
+}
+
+.index .features .features-image-container:last-of-type img {
+  -webkit-box-shadow: -25px 25px 0 -10px #F8FB05;
+          box-shadow: -25px 25px 0 -10px #F8FB05;
+}
+
+.index .features .features-image-container {
+  position: absolute;
+  width: 550px;
+}
+
+.index .features .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
 }

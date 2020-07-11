@@ -62,7 +62,46 @@
   // Features Section
   .features {
     background: $primary;
-    
+    position: relative;
+    padding: 100px 0 100px 0;
+
+    .features-image-container:first-of-type {
+      img {
+        box-shadow: 25px 25px 0 -10px $shadow;
+      }
+      top: 0;
+      left: 0;
+
+    }
+
+    .features-image-container:last-of-type {
+      img {
+        box-shadow: -25px 25px 0 -10px $shadow;
+      }
+      bottom: 0;
+      right: 0;
+
+    }
+
+    .features-image-container {
+      position: absolute;
+      width: 550px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+
+
+
+
+
+    }
+
+
+
+
   }
 
 
