@@ -1,4 +1,3 @@
-
 // Skip to Main Link
 .skip-link {
   position: absolute;
@@ -11,18 +10,6 @@
 
 .skip-link:focus {
   left: 0;
-}
-
-
-// Banner Images -- Index
-.index header {
-  height: 100vh;
-  background: url(../assets/header-home.jpg) no-repeat top right/cover;
-}
-
-.header-box {
-  width: 50%;
-  margin-top: 3%;
 }
 
 // Navigation Menu -- Global
@@ -38,16 +25,29 @@ header nav ul {
   }
 }
 
-// psuedo underline -- Index
-.index nav li:first-of-type a {
-  position: relative;
-  @include selected(65px);
-
-}
-
 h1 {
   width: 70%;
-  padding: 4% 0 0 5%;
 }
+
+// Blog & Contact 
+// Logo
+.blog nav,
+.contact nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  align-self: flex-end;
+  width: 300px;
+  padding-top: 20px;
+}
+
+// H1
+.blog h1,
+.contact h1 {
+  padding-top: 100px;
+}
+
 
 

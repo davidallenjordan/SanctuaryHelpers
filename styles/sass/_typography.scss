@@ -1,9 +1,11 @@
 
-h1, h2, h3, a, button {
+h1, h2, h3, a, button, .nav-logo, input::placeholder,
+textarea::placeholder {
   text-transform: uppercase;
 }
 
-h1, h2, h3, p, nav a {
+h1, h2, h3, p, nav a, input::placeholder,
+textarea::placeholder {
   color: $typo;
 }
 
@@ -13,7 +15,7 @@ h1 {
   line-height: 6.4rem;
 }
 
-h2, .nav-logo, button {
+h2, h3, .nav-logo, button {
   font-family: $sub-head;
 }
 
@@ -23,7 +25,7 @@ h2 {
   letter-spacing: 2.1px;
 }
 
-.nav-logo {
+.nav-logo, h3 {
   font-size: 2.2rem;
   line-height: 2.4rem;
   letter-spacing: 1.2px;
@@ -35,7 +37,8 @@ nav a {
   font-weight: 700;
 }
 
-nav a, .btn, p {
+nav a, .btn, p, input::placeholder,
+textarea::placeholder {
   font-size: 2rem;
 }
 
@@ -54,7 +57,8 @@ nav a, .btn {
   font-family: $sub-head;
 }
 
-p {
+p, input::placeholder,
+textarea::placeholder {
   letter-spacing: 2px;
 }
 
@@ -66,3 +70,4 @@ nav a, p {
   color: $secondary;
   font-size: 1.6rem;
 }
+

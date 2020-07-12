@@ -8,9 +8,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap"
     rel="stylesheet">
+    <script src="https://kit.fontawesome.com/46911dc7bd.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class="contact">
   
   <header>
 
@@ -19,8 +20,8 @@
       <a href="#main-content" class="skip-link">Skip to main content.</a>
         
       <nav>
+        <p class="nav-logo">sanctuary helpers</p>
         <ul>
-          <li class="nav-logo"><a href="#home">sanctuary helpers</a></li>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#blog">Blog</a></li>
@@ -37,24 +38,29 @@
   <main id="main-content">
 
     <form action="">
-      <label for="username" class="sr-only">Name</label>
-      <input type="text" id="username" name="username" required="true">
-              
-      <label for="email" class="sr-only">email</label>
-      <input type="email" name="email" id="email" required="true">
-              
-      <label for="comment" class="sr-only">Comment</label>
-      <textarea name="comment" id="comment" placeholder="comment" required="true"></textarea>
-              
-      <button type=submit class="btn-form btn">post comment</button>
+          
+      <div class="form-flex-container">
+          
+        <label for="username" class="sr-only">Name</label>
+        <input type="text" id="username" name="username" required="true" placeholder="name">
+          
+        <label for="email" class="sr-only">email</label>
+        <input type="email" name="email" id="email" required="true" placeholder="email address">
+          
+      </div>
+          
+      <label for="message" class="sr-only">message</label>
+      <textarea name="message" id="message" placeholder="message" required="true"></textarea>
+          
+      <button type=submit class="btn-form btn">submit</button>
     </form>
 
     <div class="social">
         <ul>
-          <li><a href="https://facebook.com"></a></li>
-          <li><a href="https://instagram.com"></a></li>
-          <li><a href="https://twitter.com"></a></li>
-          <li><a href="https://skype.com"></a></li>
+          <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://skype.com"><i class="fab fa-whatsapp"></i></a></li>
         </ul>
 
         <p>info@email.com</p>

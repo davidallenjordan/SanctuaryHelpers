@@ -1,0 +1,16 @@
+// Blog Page Body
+.blog {
+
+  header {
+    height: 70vh;
+    background: url(../assets/blog-image.jpg) no-repeat top/cover;
+  }
+
+  // Pseudo Underline
+  nav li:nth-of-type(3) a {
+    position: relative;
+    @include selected(58px);
+  }
+
+  // End of .blog
+}

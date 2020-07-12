@@ -1,0 +1,28 @@
+// Landing Page Body
+.index {
+
+  // Banner Images -- Index
+  header {
+    height: 100vh;
+    background: url(../assets/header-home.jpg) no-repeat top right/cover;
+  }
+  
+  
+  // Psuedo Underline
+  nav li:first-of-type a {
+    position: relative;
+    @include selected(65px);
+  }
+
+  h1 {
+    padding: 4% 0 0 5%;
+  }
+
+//  End of .index
+}
+
+.header-box {
+  width: 50%;
+  margin-top: 3%;
+}
+

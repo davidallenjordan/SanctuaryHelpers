@@ -1,0 +1,48 @@
+.blog {
+
+  .user-image-container {
+    max-width: 100px;
+    padding-top: 10px;
+  }
+
+  .user-comment p:first-of-type {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .comments {
+
+    padding-bottom: 80px;
+
+    .flex-container {
+      display: flex;
+      justify-content: flex-start;
+      padding-bottom: 40px;
+    }
+
+    h3 {
+      padding-bottom: 40px;
+    }
+
+    .flex-container:first-of-type {
+      padding-bottom: 80px;
+    }
+
+  }
+
+  .user-comment {
+    max-width: 700px;
+    padding-left: 40px;
+  }
+
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background: $primary; 
+  }
+
+
+
+  // End of .blog
+}
