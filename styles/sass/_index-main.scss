@@ -57,7 +57,31 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      position: relative;
+
+      i {
+        font-size: 2.5rem;
+        background: $shadow;
+        text-align: center;
+        
+        width: 50px;
+        height: 50px;
+        
+        border-radius: 50%;
+        padding-top: 12px;
+        margin-right: 20px;
+        
+        float: left;
+      }
+
+      p {
+        padding: 0 0 50px 70px;
+      }
+
+
+
     }
+
   }
 
   // Features Section
@@ -115,34 +139,7 @@
     }      
   }
 
-  // Footer
-  footer {
-    .background {
-      height: 60vh;
-      background: url(../assets/banner-image.jpg) no-repeat top/cover;
-    }
-
-    .text-container {
-      padding: 100px 0;
-      text-align: center;
-      width: 70%;
-      margin: 0 auto;
-
-      p {
-        padding-bottom: 20px;
-      }
-    }
-
-    .copyright {
-      background: $typo;
-      text-align: center;
-    }
-  }
-
-
-
-
-
+// End of Body .index 
 }
 
 

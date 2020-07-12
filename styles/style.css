@@ -402,6 +402,134 @@ h1 {
   padding: 4% 0 0 5%;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.index header {
+  height: 100vh;
+  background: url(../assets/header-home.jpg) no-repeat top right/cover;
+}
+
+.header-box {
+  width: 50%;
+  margin-top: 3%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+header nav ul li {
+  padding-left: 20px;
+}
+
+header nav ul li a {
+  display: inline-block;
+  padding: 10px 0 0 10px;
+}
+
+.index nav li:first-of-type a {
+  position: relative;
+}
+
+.index nav li:first-of-type a:after {
+  content: '';
+  display: block;
+  background: #F8FB05;
+  height: 2px;
+  width: 65px;
+  position: absolute;
+  bottom: 0;
+}
+
+h1 {
+  width: 70%;
+  padding: 4% 0 0 5%;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.index header {
+  height: 100vh;
+  background: url(../assets/header-home.jpg) no-repeat top right/cover;
+}
+
+.header-box {
+  width: 50%;
+  margin-top: 3%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+header nav ul li {
+  padding-left: 20px;
+}
+
+header nav ul li a {
+  display: inline-block;
+  padding: 10px 0 0 10px;
+}
+
+.index nav li:first-of-type a {
+  position: relative;
+}
+
+.index nav li:first-of-type a:after {
+  content: '';
+  display: block;
+  background: #F8FB05;
+  height: 2px;
+  width: 65px;
+  position: absolute;
+  bottom: 0;
+}
+
+h1 {
+  width: 70%;
+  padding: 4% 0 0 5%;
+}
+
 .index .materials {
   padding: 15% 0 10% 0;
   background: #F5F5F5;
@@ -471,6 +599,23 @@ h1 {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
+  position: relative;
+}
+
+.index .services ul i {
+  font-size: 2.5rem;
+  background: #F8FB05;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-top: 12px;
+  margin-right: 20px;
+  float: left;
+}
+
+.index .services ul p {
+  padding: 0 0 50px 70px;
 }
 
 .index .features {

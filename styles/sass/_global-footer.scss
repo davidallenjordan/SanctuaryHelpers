@@ -1,0 +1,31 @@
+// Index
+.index {
+
+  // Footer
+  footer {
+    .background {
+      height: 60vh;
+      background: url(../assets/banner-image.jpg) no-repeat top/cover;
+    }
+
+    .text-container {
+      padding: 100px 0;
+      text-align: center;
+      width: 70%;
+      margin: 0 auto;
+
+      p {
+        padding-bottom: 20px;
+      }
+    }
+
+    .copyright {
+      background: $typo;
+      text-align: center;
+    }
+  }
+
+
+
+  // End of Body .index
+}

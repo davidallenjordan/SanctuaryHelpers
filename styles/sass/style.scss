@@ -2,7 +2,19 @@
 @import 'variables';
 @import 'typography';
 @import 'mixins';
-@import 'base';
-@import 'header';
+@import 'global';
+
+// Headers
+@import 'global-header';
+@import 'index-header';
+@import 'contact-header';
+
+// Mains
 @import 'index-main';
-@import 'footer';
+@import 'blog-main';
+@import 'contact-main';
+
+// Footers
+@import 'global-footer';
+@import 'index-footer';
+@import 'contact-footer';
