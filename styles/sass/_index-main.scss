@@ -51,6 +51,7 @@
   .services {
     background: $secondary;
     padding: 80px 0 80px 0;
+    position: relative;
 
     ul {
       display: grid;
@@ -62,47 +63,82 @@
   // Features Section
   .features {
     background: $primary;
+    padding: 80px 0 60px 0;
     position: relative;
-    padding: 100px 0 100px 0;
 
-    .features-image-container:first-of-type {
+    .image-container:first-of-type {
       img {
         box-shadow: 25px 25px 0 -10px $shadow;
       }
-      top: 0;
+      top: -30px;
       left: 0;
-
     }
 
-    .features-image-container:last-of-type {
+    .image-container:not(:first-of-type) {
       img {
         box-shadow: -25px 25px 0 -10px $shadow;
       }
-      bottom: 0;
+      bottom: -30px;
       right: 0;
-
     }
 
-    .features-image-container {
+    .image-container {
       position: absolute;
-      width: 550px;
+      max-width: 700px;
     }
-
+    
     .grid-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      gap: 100px;
+    }
+        
+    .programs {
+      grid-column: 2;
+      margin-left: 15%;
+      
+      p {
+        padding: 0 40px 25px 0;
+      }
+    }
+    
+    .locations {
+      text-align: right;
+      grid-row: 2;
+      margin-right: 15%;
+      // padding-top: 15px;
+      
+      p {
+        padding: 0 0 25px 40px;
+      }
+    }      
+  }
 
-
-
-
-
+  // Footer
+  footer {
+    .background {
+      height: 60vh;
+      background: url(../assets/banner-image.jpg) no-repeat top/cover;
     }
 
+    .text-container {
+      padding: 100px 0;
+      text-align: center;
+      width: 70%;
+      margin: 0 auto;
 
+      p {
+        padding-bottom: 20px;
+      }
+    }
 
-
+    .copyright {
+      background: $typo;
+      text-align: center;
+    }
   }
+
 
 
 

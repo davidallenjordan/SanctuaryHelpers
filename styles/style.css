@@ -266,7 +266,6 @@ h2 {
 }
 
 nav a {
-  font-family: "Lato", sans-serif;
   line-height: 2.9rem;
   letter-spacing: 1.4px;
   font-weight: 700;
@@ -293,6 +292,15 @@ nav a, .btn {
 
 p {
   letter-spacing: 2px;
+}
+
+nav a, p {
+  font-family: "Lato", sans-serif;
+}
+
+.copyright p, .copyright a {
+  color: #F5F5F5;
+  font-size: 1.6rem;
 }
 
 .wrapper {
@@ -453,6 +461,7 @@ h1 {
 .index .services {
   background: #F5F5F5;
   padding: 80px 0 80px 0;
+  position: relative;
 }
 
 .index .services ul {
@@ -466,33 +475,33 @@ h1 {
 
 .index .features {
   background: #E0FDDF;
+  padding: 80px 0 60px 0;
   position: relative;
-  padding: 100px 0 100px 0;
 }
 
-.index .features .features-image-container:first-of-type {
-  top: 0;
+.index .features .image-container:first-of-type {
+  top: -30px;
   left: 0;
 }
 
-.index .features .features-image-container:first-of-type img {
+.index .features .image-container:first-of-type img {
   -webkit-box-shadow: 25px 25px 0 -10px #F8FB05;
           box-shadow: 25px 25px 0 -10px #F8FB05;
 }
 
-.index .features .features-image-container:last-of-type {
-  bottom: 0;
+.index .features .image-container:not(:first-of-type) {
+  bottom: -30px;
   right: 0;
 }
 
-.index .features .features-image-container:last-of-type img {
+.index .features .image-container:not(:first-of-type) img {
   -webkit-box-shadow: -25px 25px 0 -10px #F8FB05;
           box-shadow: -25px 25px 0 -10px #F8FB05;
 }
 
-.index .features .features-image-container {
+.index .features .image-container {
   position: absolute;
-  width: 550px;
+  max-width: 700px;
 }
 
 .index .features .grid-container {
@@ -502,4 +511,47 @@ h1 {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.index .features .programs {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  margin-left: 15%;
+}
+
+.index .features .programs p {
+  padding: 0 40px 25px 0;
+}
+
+.index .features .locations {
+  text-align: right;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin-right: 15%;
+}
+
+.index .features .locations p {
+  padding: 0 0 25px 40px;
+}
+
+.index footer .background {
+  height: 60vh;
+  background: url(../assets/banner-image.jpg) no-repeat top/cover;
+}
+
+.index footer .text-container {
+  padding: 100px 0;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.index footer .text-container p {
+  padding-bottom: 20px;
+}
+
+.index footer .copyright {
+  background: #151514;
+  text-align: center;
 }

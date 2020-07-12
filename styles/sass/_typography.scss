@@ -30,7 +30,6 @@ h2 {
 }
 
 nav a {
-  font-family: $base;
   line-height: 2.9rem;
   letter-spacing: 1.4px;
   font-weight: 700;
@@ -57,4 +56,13 @@ nav a, .btn {
 
 p {
   letter-spacing: 2px;
+}
+
+nav a, p {
+  font-family: $base;
+}
+
+.copyright p, .copyright a {
+  color: $secondary;
+  font-size: 1.6rem;
 }
