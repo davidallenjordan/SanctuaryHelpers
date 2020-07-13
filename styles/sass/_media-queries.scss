@@ -10,6 +10,11 @@
 
     header {
     background-position: 0% 80%, top right;
+
+      nav li:first-of-type a {
+        @include selected(57px);
+      }
+
     }
 
     .materials-text-container {
@@ -34,9 +39,18 @@
 
   .index {
 
+    h2 {
+      line-height: 1.2;
+    }
+
     header {
       height: 80vh;
       background-position: 0% 70%, top right;
+
+        nav li:first-of-type a {
+          @include selected(53px);
+        }
+
     }
 
 
@@ -69,6 +83,11 @@
       h2 {
         font-size: 2.8rem;
       }
+
+      ul i {
+        margin-top: -12px;
+      }
+
     }
 
     .features {
@@ -94,7 +113,20 @@
 
     header {
       height: 70vh;
-      background-position: 0% 70%, top right;
+
+      nav li:first-of-type a {
+        @include selected(47px);
+      }
+
+      h1 {
+        padding-left: 0;
+      }
+    }
+
+    .materials {
+      h2 {
+        font-size: 2.8rem;
+      }
     }
 
     .features {
@@ -107,17 +139,85 @@
         margin: 0 auto;
         padding: 40px 0;
       }
-
-      
     }
-    
-    
-    
-    
   }
-  
 
 }
 
 
+@media (max-width: 630px) {
+
+  // Global Style
+  html {
+    font-size: 45%;
+  }
+
+  .index {
+
+
+    header {
+      background-position: 0% 70%, top right;
+      background-size: 0%, cover;
+
+      nav ul {
+        @include flex(center, center);
+
+        li {
+          padding: 0 20px;
+        }
+      }
+    }
+
+    h1 {
+      padding: 30px 0 0 0;
+    }
+
+    .materials-text-container {
+      max-width: 100%;
+    }
+
+    .materials-image-container {
+      max-width: 100%;
+      box-shadow: none;
+      border: 15px solid $shadow;
+
+    }
+
+    .gallery {
+      padding: 30px 0;
+
+      ul {
+        flex-direction: column;
+      }
+      li {
+        min-width: 90%;
+      }
+
+    }
+
+
+    .services {
+      padding-bottom: 25px;
+    }
+
+    .services ul {
+      display: block;
+      margin: 0 auto;
+
+      i {
+        height: 45px;
+      }
+    }
+
+    .materials, .services, .features {
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    footer .text-container {
+      width: 100%;
+    }
+  }
+}
 

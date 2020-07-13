@@ -968,6 +968,15 @@ form .btn {
   .index header {
     background-position: 0% 80%, top right;
   }
+  .index header nav li:first-of-type a:after {
+    content: '';
+    display: block;
+    background: #F8FB05;
+    height: 2px;
+    width: 57px;
+    position: absolute;
+    bottom: 0;
+  }
   .index .materials-text-container {
     padding-right: 30px;
   }
@@ -980,9 +989,21 @@ form .btn {
   html {
     font-size: 50%;
   }
+  .index h2 {
+    line-height: 1.2;
+  }
   .index header {
     height: 80vh;
     background-position: 0% 70%, top right;
+  }
+  .index header nav li:first-of-type a:after {
+    content: '';
+    display: block;
+    background: #F8FB05;
+    height: 2px;
+    width: 53px;
+    position: absolute;
+    bottom: 0;
   }
   .index .materials {
     padding-top: 0;
@@ -1003,6 +1024,9 @@ form .btn {
   .index .services h2 {
     font-size: 2.8rem;
   }
+  .index .services ul i {
+    margin-top: -12px;
+  }
   .index .features .image-container {
     position: static;
   }
@@ -1014,7 +1038,21 @@ form .btn {
 @media (max-width: 900px) {
   .index header {
     height: 70vh;
-    background-position: 0% 70%, top right;
+  }
+  .index header nav li:first-of-type a:after {
+    content: '';
+    display: block;
+    background: #F8FB05;
+    height: 2px;
+    width: 47px;
+    position: absolute;
+    bottom: 0;
+  }
+  .index header h1 {
+    padding-left: 0;
+  }
+  .index .materials h2 {
+    font-size: 2.8rem;
   }
   .index .features .grid-container {
     display: block;
@@ -1022,5 +1060,69 @@ form .btn {
   .index .features .image-container {
     margin: 0 auto;
     padding: 40px 0;
+  }
+}
+
+@media (max-width: 630px) {
+  html {
+    font-size: 45%;
+  }
+  .index header {
+    background-position: 0% 70%, top right;
+    background-size: 0%, cover;
+  }
+  .index header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .index header nav ul li {
+    padding: 0 20px;
+  }
+  .index h1 {
+    padding: 30px 0 0 0;
+  }
+  .index .materials-text-container {
+    max-width: 100%;
+  }
+  .index .materials-image-container {
+    max-width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 15px solid #F8FB05;
+  }
+  .index .gallery {
+    padding: 30px 0;
+  }
+  .index .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .index .gallery li {
+    min-width: 90%;
+  }
+  .index .services {
+    padding-bottom: 25px;
+  }
+  .index .services ul {
+    display: block;
+    margin: 0 auto;
+  }
+  .index .services ul i {
+    height: 45px;
+  }
+  .index .materials h2, .index .services h2, .index .features h2 {
+    font-size: 2.5rem;
+  }
+  .index footer .text-container {
+    width: 100%;
   }
 }
