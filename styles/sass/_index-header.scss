@@ -4,7 +4,7 @@
   // Banner Images -- Index
   header {
     height: 100vh;
-    background: url(../assets/header-home.jpg) no-repeat top right/cover;
+    background: url(../assets/header-box.png) no-repeat 0% 100%/50%, url(../assets/header-home.jpg) no-repeat top right/contain, $secondary;
   }
   
   
@@ -21,8 +21,8 @@
 //  End of .index
 }
 
-.header-box {
-  width: 50%;
-  margin-top: 3%;
-}
+// .header-box {
+//   width: 50%;
+//   margin-top: 3%;
+// }
 
