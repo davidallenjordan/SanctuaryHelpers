@@ -1,8 +1,9 @@
 // Navigation
-@mixin flex($mainax, $crossax) {
+@mixin flex($mainax, $crossax, $wrap) {
   display: flex;
   justify-content: $mainax;
   align-items: $crossax;
+  flex-wrap: $wrap;
 }
 
 // Navigation pseudo underline 

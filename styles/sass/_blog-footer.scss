@@ -1,5 +1,7 @@
+// Blog Page Body
 .blog {
 
+  // Comments Section
   .user-image-container {
     max-width: 100px;
     padding-top: 10px;
@@ -10,24 +12,18 @@
     text-transform: uppercase;
   }
 
-  .comments {
-
+  .comments,
+  .comments .flex-container:first-of-type {
     padding-bottom: 80px;
 
     .flex-container {
-      display: flex;
-      justify-content: flex-start;
+      @include flex(flex-start, 0, 0);
+    }
+
+    h3,
+    .flex-container {
       padding-bottom: 40px;
     }
-
-    h3 {
-      padding-bottom: 40px;
-    }
-
-    .flex-container:first-of-type {
-      padding-bottom: 80px;
-    }
-
   }
 
   .user-comment {

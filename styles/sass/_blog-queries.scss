@@ -22,21 +22,29 @@
 @media (max-width: 900px) {
 
   .blog {
+
+    header {
+      height: 60vh;
+    }
+
+    // Blog Post
     .blog-image-container {
       padding: 0;
       border: 80px solid $secondary;
+    }
 
-      img {
-        box-shadow: none;
-      }
+    .blog-image-container img,
+    .blog-text-container,
+    aside .sidebar-image-container img {
+      box-shadow: none;
     }
 
     .blog-text-container {
       border-top: 25px solid $shadow;
       padding-left: 0;
-      box-shadow: none;
     }
 
+    // Sidebar
     aside {
       display: flex;
       min-width: 90%;
@@ -45,7 +53,6 @@
       bottom: 100px;
 
       .sidebar-image-container img {
-        box-shadow: none;
         min-height: 297.6px;
         object-fit: cover;
       }
@@ -55,6 +62,7 @@
       }
     }
 
+    // Form
     form {
       width: 80%;
 
@@ -77,7 +85,8 @@
       height: 50vh;
     }
 
-    .flex-container {
+    .flex-container,
+    aside {
       display: block;
     }
 
@@ -85,9 +94,11 @@
       border: 30px solid $secondary;
     }
 
-    aside {
+    // Sidebar
+    aside,
+    .sidebar-text-container,
+    form {
       width: 100%;
-      display: block;
     }
 
     .sidebar-image-container {
@@ -96,11 +107,11 @@
     }
 
     .sidebar-text-container {
-      width: 100%;
       padding: 20px 0 40px 20px;
       margin-bottom: -40px;
     }
 
+    // Comments
     .user-comment {
       width: 80%;
     }
@@ -109,16 +120,9 @@
       width: 50px;
     }
 
-    .comments .flex-container:first-of-type {
-	    padding-bottom: 40px;
-    }
-
-    form {
-      width: 100%;
-    }
-
+    .comments .flex-container:first-of-type,
     .comments {
-      padding-bottom: 40px;
+	    padding-bottom: 40px;
     }
 
     // End of .blog
@@ -156,6 +160,7 @@
       margin-top: -10px;
     }
 
+    // Form
     form {
       input[type="text"],
       input[type="email"],

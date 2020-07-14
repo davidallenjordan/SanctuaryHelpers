@@ -3,6 +3,7 @@
 
   .contact {
 
+    // Form
     form {
       input::placeholder,
       textarea::placeholder {
@@ -32,6 +33,10 @@
 
   .contact {
 
+    header {
+      height: 40vh;
+    }
+
     main {
       display: block;
     }
@@ -43,6 +48,7 @@
       position: static;
     }
 
+    // Social
     .social {
       padding-top: 40px;
       text-align: center;
@@ -88,7 +94,14 @@
         margin: 20px 0;
       }
     }
+    
+    .social p:last-of-type {
+      padding-bottom: 30px;
+    }
 
+    .social p {
+      padding-top: 10px;
+    }
 
     // End of .contact
   }

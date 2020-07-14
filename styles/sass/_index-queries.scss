@@ -34,6 +34,7 @@
       background-position: 0% 70%, top right;
     }
 
+    // Materials
     .materials {
       padding-top: 0;
 
@@ -87,6 +88,7 @@
 
   .index {
 
+    // Header
     header {
       height: 70vh;
 
@@ -118,6 +120,7 @@
       }
     }
 
+    // Footer
     footer {
       .background {
         height: 35vh;
@@ -146,24 +149,22 @@
 
       h1 {
         font-size: 5rem;
+        padding: 60px 0 0 0;
       }
-
     }
 
-    h1 {
-      padding: 60px 0 0 0;
-    }
-
-    .materials-text-container {
+    // Materials
+    .materials-text-container,
+    .materials-image-container {
       max-width: 100%;
     }
 
     .materials-image-container {
-      max-width: 100%;
       box-shadow: none;
       border: 15px solid $shadow;
     }
 
+    // Gallery
     .gallery {
       padding: 30px 0;
 
@@ -221,18 +222,43 @@
     header {
       height: 50vh;
       background-size: 0%, cover;
-    }
+    }    
 
     .materials {
-      padding-bottom: 60px;
+      padding-bottom: 40px;
+
+      .materials-text-container {
+        padding-bottom: 40px;
+      }
+    }
+
+    .gallery {
+      padding: 15px 0;
+      li {
+      margin: 20px auto;
+      }
     }
 
     .services {
-      padding-top: 65px;
+      padding: 40px 0;
+      
+      ul li:last-of-type p {
+        padding-bottom: 0;
+      }
+      
+      ul li { 
+        p {
+          padding-left: 0;
+        }
+
+        h2 {
+          padding-bottom: 15px;
+        }
+      }
     }
 
     .features {
-      padding-top: 25px;
+      padding: 0 0 40px 0;
       .text-container {
         margin: 0;
 
@@ -241,7 +267,15 @@
         }
       }
     }
+
+    footer .text-container {
+      padding: 40px 0;
+    }
     // End of .index
+  }
+
+  p {
+    line-height: 2.5rem;
   }
 
 // End of Query

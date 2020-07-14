@@ -235,42 +235,90 @@ html {
   overflow: hidden;
 }
 
-h1, h2, h3, a, button, .nav-logo, input::-webkit-input-placeholder,
+h1,
+h2,
+h3,
+a,
+button,
+.nav-logo,
+input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   text-transform: uppercase;
 }
 
-h1, h2, h3, a, button, .nav-logo, input:-ms-input-placeholder,
+h1,
+h2,
+h3,
+a,
+button,
+.nav-logo,
+input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   text-transform: uppercase;
 }
 
-h1, h2, h3, a, button, .nav-logo, input::-ms-input-placeholder,
+h1,
+h2,
+h3,
+a,
+button,
+.nav-logo,
+input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   text-transform: uppercase;
 }
 
-h1, h2, h3, a, button, .nav-logo, input::placeholder,
+h1,
+h2,
+h3,
+a,
+button,
+.nav-logo,
+input::placeholder,
 textarea::placeholder {
   text-transform: uppercase;
 }
 
-h1, h2, h3, p, nav a, input::-webkit-input-placeholder,
+h1,
+h2,
+h3,
+p,
+nav
+a,
+input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #151514;
 }
 
-h1, h2, h3, p, nav a, input:-ms-input-placeholder,
+h1,
+h2,
+h3,
+p,
+nav
+a,
+input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #151514;
 }
 
-h1, h2, h3, p, nav a, input::-ms-input-placeholder,
+h1,
+h2,
+h3,
+p,
+nav
+a,
+input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   color: #151514;
 }
 
-h1, h2, h3, p, nav a, input::placeholder,
+h1,
+h2,
+h3,
+p,
+nav
+a,
+input::placeholder,
 textarea::placeholder {
   color: #151514;
 }
@@ -281,7 +329,10 @@ h1 {
   line-height: 6.4rem;
 }
 
-h2, h3, .nav-logo, button {
+h2,
+h3,
+.nav-logo,
+button {
   font-family: "Kumar One", cursive;
 }
 
@@ -291,7 +342,8 @@ h2 {
   letter-spacing: 2.1px;
 }
 
-.nav-logo, h3 {
+.nav-logo,
+h3 {
   font-size: 2.2rem;
   line-height: 2.4rem;
   letter-spacing: 1.2px;
@@ -303,31 +355,45 @@ nav a {
   font-weight: 700;
 }
 
-nav a, .btn, p, input::-webkit-input-placeholder,
+nav a,
+.btn,
+p,
+input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   font-size: 2rem;
 }
 
-nav a, .btn, p, input:-ms-input-placeholder,
+nav a,
+.btn,
+p,
+input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   font-size: 2rem;
 }
 
-nav a, .btn, p, input::-ms-input-placeholder,
+nav a,
+.btn,
+p,
+input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   font-size: 2rem;
 }
 
-nav a, .btn, p, input::placeholder,
+nav a,
+.btn,
+p,
+input::placeholder,
 textarea::placeholder {
   font-size: 2rem;
 }
 
-nav a, .btn {
+nav a,
+.btn {
   text-align: center;
 }
 
-.btn, p {
+.btn,
+p {
   line-height: 3.2rem;
 }
 
@@ -338,31 +404,37 @@ nav a, .btn {
   font-family: "Kumar One", cursive;
 }
 
-p, input::-webkit-input-placeholder,
+p,
+input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   letter-spacing: 2px;
 }
 
-p, input:-ms-input-placeholder,
+p,
+input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   letter-spacing: 2px;
 }
 
-p, input::-ms-input-placeholder,
+p,
+input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   letter-spacing: 2px;
 }
 
-p, input::placeholder,
+p,
+input::placeholder,
 textarea::placeholder {
   letter-spacing: 2px;
 }
 
-nav a, p {
+nav a,
+p {
   font-family: "Lato", sans-serif;
 }
 
-.copyright p, .copyright a {
+.copyright p,
+.copyright a {
   color: #F5F5F5;
   font-size: 1.6rem;
 }
@@ -377,7 +449,12 @@ html {
   font-size: 62.5%;
 }
 
-body, h1, h2, h3, p, ul {
+body,
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -429,6 +506,8 @@ header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: 0;
+      flex-wrap: 0;
   padding-top: 20px;
 }
 
@@ -457,6 +536,11 @@ header nav ul li a:hover, header nav ul li a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: 0;
+      -ms-flex-align: 0;
+          align-items: 0;
+  -ms-flex-wrap: 0;
+      flex-wrap: 0;
 }
 
 .nav-logo {
@@ -542,6 +626,12 @@ header nav ul li a:hover, header nav ul li a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-align: 0;
+      -ms-flex-align: 0;
+          align-items: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -574,11 +664,14 @@ header nav ul li a:hover, header nav ul li a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: 0;
+      -ms-flex-align: 0;
+          align-items: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .index .gallery ul li {
@@ -589,10 +682,14 @@ header nav ul li a:hover, header nav ul li a:focus {
   margin-right: 20px;
 }
 
+.index .services,
+.index .services ul {
+  position: relative;
+}
+
 .index .services {
   background: #F5F5F5;
   padding: 80px 0 40px 0;
-  position: relative;
 }
 
 .index .services ul {
@@ -602,7 +699,6 @@ header nav ul li a:hover, header nav ul li a:focus {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  position: relative;
 }
 
 .index .services ul i {
@@ -695,6 +791,9 @@ header nav ul li a:hover, header nav ul li a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: 0;
+      -ms-flex-align: 0;
+          align-items: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -790,6 +889,8 @@ header nav ul li a:hover, header nav ul li a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: 0;
+      flex-wrap: 0;
 }
 
 .contact input[type="text"],
@@ -885,6 +986,11 @@ form .form-flex-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: 0;
+      -ms-flex-align: 0;
+          align-items: 0;
+  -ms-flex-wrap: 0;
+      flex-wrap: 0;
 }
 
 form input[type="text"],
@@ -941,26 +1047,31 @@ form .btn {
   text-transform: uppercase;
 }
 
-.blog .comments {
+.blog .comments,
+.blog .comments .flex-container:first-of-type {
   padding-bottom: 80px;
 }
 
-.blog .comments .flex-container {
+.blog .comments .flex-container,
+.blog .comments .flex-container:first-of-type .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-bottom: 40px;
+  -webkit-box-align: 0;
+      -ms-flex-align: 0;
+          align-items: 0;
+  -ms-flex-wrap: 0;
+      flex-wrap: 0;
 }
 
-.blog .comments h3 {
+.blog .comments h3,
+.blog .comments .flex-container,
+.blog .comments .flex-container:first-of-type h3,
+.blog .comments .flex-container:first-of-type .flex-container {
   padding-bottom: 40px;
-}
-
-.blog .comments .flex-container:first-of-type {
-  padding-bottom: 80px;
 }
 
 .blog .user-comment {
@@ -1055,6 +1166,8 @@ form .btn {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: 0;
+        flex-wrap: 0;
   }
 }
 
@@ -1173,15 +1286,13 @@ form .btn {
   }
   .index header h1 {
     font-size: 5rem;
-  }
-  .index h1 {
     padding: 60px 0 0 0;
   }
-  .index .materials-text-container {
+  .index .materials-text-container,
+  .index .materials-image-container {
     max-width: 100%;
   }
   .index .materials-image-container {
-    max-width: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 15px solid #F8FB05;
@@ -1226,19 +1337,43 @@ form .btn {
     background-size: 0%, cover;
   }
   .index .materials {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+  }
+  .index .materials .materials-text-container {
+    padding-bottom: 40px;
+  }
+  .index .gallery {
+    padding: 15px 0;
+  }
+  .index .gallery li {
+    margin: 20px auto;
   }
   .index .services {
-    padding-top: 65px;
+    padding: 40px 0;
+  }
+  .index .services ul li:last-of-type p {
+    padding-bottom: 0;
+  }
+  .index .services ul li p {
+    padding-left: 0;
+  }
+  .index .services ul li h2 {
+    padding-bottom: 15px;
   }
   .index .features {
-    padding-top: 25px;
+    padding: 0 0 40px 0;
   }
   .index .features .text-container {
     margin: 0;
   }
   .index .features .text-container p {
     padding: 0 0 25px 0;
+  }
+  .index footer .text-container {
+    padding: 40px 0;
+  }
+  p {
+    line-height: 2.5rem;
   }
 }
 
@@ -1255,19 +1390,22 @@ form .btn {
 }
 
 @media (max-width: 900px) {
+  .blog header {
+    height: 60vh;
+  }
   .blog .blog-image-container {
     padding: 0;
     border: 80px solid #F5F5F5;
   }
-  .blog .blog-image-container img {
+  .blog .blog-image-container img,
+  .blog .blog-text-container,
+  .blog aside .sidebar-image-container img {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
   .blog .blog-text-container {
     border-top: 25px solid #F8FB05;
     padding-left: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .blog aside {
     display: -webkit-box;
@@ -1278,8 +1416,6 @@ form .btn {
     bottom: 100px;
   }
   .blog aside .sidebar-image-container img {
-    -webkit-box-shadow: none;
-            box-shadow: none;
     min-height: 297.6px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1312,22 +1448,23 @@ form .btn {
   .blog header {
     height: 50vh;
   }
-  .blog .flex-container {
+  .blog .flex-container,
+  .blog aside {
     display: block;
   }
   .blog .blog-image-container {
     border: 30px solid #F5F5F5;
   }
-  .blog aside {
+  .blog aside,
+  .blog .sidebar-text-container,
+  .blog form {
     width: 100%;
-    display: block;
   }
   .blog .sidebar-image-container {
     padding: 50px 100px;
     margin: 0 auto;
   }
   .blog .sidebar-text-container {
-    width: 100%;
     padding: 20px 0 40px 20px;
     margin-bottom: -40px;
   }
@@ -1337,12 +1474,7 @@ form .btn {
   .blog .user-image-container {
     width: 50px;
   }
-  .blog .comments .flex-container:first-of-type {
-    padding-bottom: 40px;
-  }
-  .blog form {
-    width: 100%;
-  }
+  .blog .comments .flex-container:first-of-type,
   .blog .comments {
     padding-bottom: 40px;
   }
@@ -1422,6 +1554,9 @@ form .btn {
 }
 
 @media (max-width: 775px) {
+  .contact header {
+    height: 40vh;
+  }
   .contact main {
     display: block;
   }
@@ -1462,5 +1597,11 @@ form .btn {
   }
   .contact form textarea {
     margin: 20px 0;
+  }
+  .contact .social p:last-of-type {
+    padding-bottom: 30px;
+  }
+  .contact .social p {
+    padding-top: 10px;
   }
 }

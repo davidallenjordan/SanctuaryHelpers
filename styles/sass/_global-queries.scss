@@ -57,7 +57,7 @@
 @media (max-width: 900px) {
 
   header nav ul {
-    @include flex(center, center);
+    @include flex(center, center, 0);
   }
 
 }
@@ -69,6 +69,7 @@
     font-size: 45%;
   }
 
+  // Hiding Nav for Larger Screens
   header {
     nav ul {
       visibility: hidden;
@@ -79,6 +80,7 @@
     }
   }
 
+  // Revealing Mobile Nav
   .mobile-nav {
     display: block;
     font-size: 4.5rem;

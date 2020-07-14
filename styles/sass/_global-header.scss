@@ -14,7 +14,7 @@
 
 // Navigation Menu
 header nav ul {
-  @include flex(flex-end, center);
+  @include flex(flex-end, center, 0);
   padding-top: 20px;
   li {
     padding-left: 20px;
@@ -40,8 +40,7 @@ header nav ul {
   // Logo
 .blog nav,
 .contact nav {
-  display: flex;
-  justify-content: space-between;
+  @include flex(space-between, 0, 0);
 }
 
 .nav-logo {

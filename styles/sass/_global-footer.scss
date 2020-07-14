@@ -10,6 +10,7 @@
   }
 }
 
+// Forms
 form {
 
   width: 65%;
@@ -23,8 +24,7 @@ form {
   }
 
   .form-flex-container {
-    display: flex;
-    justify-content: space-between;
+    @include flex(space-between, 0, 0);
   }
 
   input[type="text"],
@@ -44,7 +44,6 @@ form {
     width: calc(50% - 20px);
   }
 
-  
   textarea {
     resize: none;
     border: 2px solid $button;
@@ -52,6 +51,7 @@ form {
     margin: 40px 0;
   }
 
+  // Need this by itself for cascade
   .btn {
     border: none;
   }
