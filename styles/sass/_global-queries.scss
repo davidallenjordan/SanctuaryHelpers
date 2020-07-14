@@ -1,0 +1,91 @@
+// Medium Screens
+@media(max-width: 1350px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  // Pseudo Underline Adjustments
+    // Index
+  .index header nav li:first-of-type a {
+    @include selected(57px);
+  }
+    // Blog
+  .blog header nav li:nth-of-type(3) a {
+    @include selected(50px);
+  }
+    // Contact
+  .contact header nav li:nth-of-type(4) a {
+    @include selected(90px);
+  }
+
+
+}
+
+// Small Screens / Large Tablet
+@media (max-width: 1090px) {
+
+  html {
+    font-size: 50%;
+  }
+
+    // Pseudo Underline Adjustments
+    // Index
+  .index header nav li:first-of-type a {
+    @include selected(53px);
+  }
+    // Blog
+  .blog header nav li:nth-of-type(3) a {
+    @include selected(46px);
+  }
+    // Contact
+  .contact header nav li:nth-of-type(4) a {
+    @include selected(84px);
+  }
+
+  // Blog & Contact
+  .blog,
+  .contact {
+    h1 {
+      padding-top: 40px;
+    }
+  }
+
+}
+
+// Small Screens / Tablet
+@media (max-width: 900px) {
+
+  header nav ul {
+    @include flex(center, center);
+  }
+
+}
+
+// Large Mobile / Small Tablet
+@media (max-width: 630px) {
+
+  html {
+    font-size: 45%;
+  }
+
+  header {
+    nav ul {
+      visibility: hidden;
+      position: absolute;
+      left: 0;
+      // nav was causing scroll
+      width: 50px;
+    }
+  }
+
+  .mobile-nav {
+    display: block;
+    font-size: 4.5rem;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  // End of Query
+}

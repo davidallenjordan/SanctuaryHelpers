@@ -1,0 +1,97 @@
+// Small Screens / Tablet
+@media (max-width: 960px) {
+
+  .contact {
+
+    form {
+      input::placeholder,
+      textarea::placeholder {
+        font-size: 1.6rem;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        padding-left: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        padding-bottom: 10px;
+      }
+    }
+
+    // End of .contact
+  }
+// End of Query
+}
+
+
+// Tablets / Big Mobile
+@media (max-width: 775px) {
+
+  .contact {
+
+    main {
+      display: block;
+    }
+
+    form {
+      width: 100%;
+      border: 50px solid $primary;
+      box-shadow: 0 15px $shadow;
+      position: static;
+    }
+
+    .social {
+      padding-top: 40px;
+      text-align: center;
+      
+      p {
+        font-size: 2.5rem;
+      }
+    }
+
+    .social ul {
+      justify-content: center;
+
+    }
+
+    .social li {
+      padding: 0 20px;
+
+      a {
+        font-size: 4rem;
+      }
+    }
+
+    // End of .contact
+  }
+// End of Query
+}
+
+
+// Mobile
+@media (max-width: 500px) {
+
+  .contact {
+
+    header {
+      height: 30vh;
+    }
+
+    form {
+      border: none;
+      padding: 10px;
+
+      textarea {
+        margin: 20px 0;
+      }
+    }
+
+
+    // End of .contact
+  }
+
+// End of Query
+}

@@ -2,7 +2,7 @@
 @import 'variables';
 @import 'typography';
 @import 'mixins';
-@import 'global';
+@import 'global-base';
 
 // Headers
 @import 'global-header';
@@ -21,4 +21,7 @@
 @import 'blog-footer';
 
 // Queries
-@import 'media-queries';
+@import 'global-queries';
+@import 'index-queries';
+@import 'blog-queries';
+@import 'contact-queries';

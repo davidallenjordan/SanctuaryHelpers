@@ -1,20 +1,10 @@
-
+// Medium Screens
 @media(max-width: 1350px) {
-
-  // Global Style
-  html {
-    font-size: 55%;
-  }
 
   .index {
 
     header {
     background-position: 0% 80%, top right;
-
-      nav li:first-of-type a {
-        @include selected(57px);
-      }
-
     }
 
     .materials-text-container {
@@ -25,17 +15,13 @@
       max-width: 550px;
     }
 
+    // End of .index
   }
+  // End of Query
 }
 
-
+// Smaller Screens / Large Tablets
 @media (max-width: 1090px) {
-
-  // Global Style
-  html {
-    font-size: 50%;
-  }
-
 
   .index {
 
@@ -46,13 +32,7 @@
     header {
       height: 80vh;
       background-position: 0% 70%, top right;
-
-        nav li:first-of-type a {
-          @include selected(53px);
-        }
-
     }
-
 
     .materials {
       padding-top: 0;
@@ -71,7 +51,6 @@
     }
 
     .gallery {
-
       li {
         margin: 40px auto;
         min-width: 40%;
@@ -79,7 +58,6 @@
     }
 
     .services {
-
       h2 {
         font-size: 2.8rem;
       }
@@ -87,11 +65,9 @@
       ul i {
         margin-top: -12px;
       }
-
     }
 
     .features {
-
       .image-container {
         position: static;
       }
@@ -103,10 +79,10 @@
 
     // End of .index
   }
-
+// End of Query
 }
 
-
+// Tablets
 @media (max-width: 900px) {
 
   .index {
@@ -118,19 +94,20 @@
         @include selected(47px);
       }
 
+      nav li {
+        padding: 0 30px;
+      }
+
       h1 {
         padding-left: 0;
       }
     }
 
-    .materials {
-      h2 {
-        font-size: 2.8rem;
-      }
+    .materials h2 {
+      font-size: 2.8rem;
     }
 
     .features {
-
       .grid-container {
         display: block;
       }
@@ -140,36 +117,41 @@
         padding: 40px 0;
       }
     }
-  }
 
-}
+    footer {
+      .background {
+        height: 35vh;
+        background-size: cover;
+      }
 
-
-@media (max-width: 630px) {
-
-  // Global Style
-  html {
-    font-size: 45%;
-  }
-
-  .index {
-
-
-    header {
-      background-position: 0% 70%, top right;
-      background-size: 0%, cover;
-
-      nav ul {
-        @include flex(center, center);
-
-        li {
-          padding: 0 20px;
-        }
+      .text-container {
+        padding: 50px 0;
       }
     }
 
+    // End of .index
+  }
+// End of Query
+}
+
+// Small Tablets / Large Mobile
+@media (max-width: 630px) {
+
+  .index {
+
+    header {
+      height: 55vh;
+      background-position: 0% 70%, top right;
+      background-size: 0%, cover;
+
+      h1 {
+        font-size: 5rem;
+      }
+
+    }
+
     h1 {
-      padding: 30px 0 0 0;
+      padding: 60px 0 0 0;
     }
 
     .materials-text-container {
@@ -180,7 +162,6 @@
       max-width: 100%;
       box-shadow: none;
       border: 15px solid $shadow;
-
     }
 
     .gallery {
@@ -189,10 +170,10 @@
       ul {
         flex-direction: column;
       }
+
       li {
         min-width: 90%;
       }
-
     }
 
 
@@ -215,9 +196,53 @@
       }
     }
 
-    footer .text-container {
-      width: 100%;
+    footer {
+      .text-container {
+        width: 100%;
+      }
+
+      .background {
+        height: 25vh;
+        background-size: cover;
+      }
     }
+
+    // End of .index
   }
+  // End of Query
 }
 
+
+// Mobile / Smallest Screens
+@media (max-width: 450px) {
+
+  .index {
+
+    header {
+      height: 50vh;
+      background-size: 0%, cover;
+    }
+
+    .materials {
+      padding-bottom: 60px;
+    }
+
+    .services {
+      padding-top: 65px;
+    }
+
+    .features {
+      padding-top: 25px;
+      .text-container {
+        margin: 0;
+
+        p {
+          padding: 0 0 25px 0;
+        }
+      }
+    }
+    // End of .index
+  }
+
+// End of Query
+}

@@ -12,7 +12,7 @@
   left: 0;
 }
 
-// Navigation Menu -- Global
+// Navigation Menu
 header nav ul {
   @include flex(flex-end, center);
   padding-top: 20px;
@@ -21,16 +21,23 @@ header nav ul {
     a {
       display: inline-block;
       padding: 10px 0 0 10px;
+
+      &:hover,
+      &:focus {
+        color: $button;
+      }
     }
   }
 }
 
-h1 {
-  width: 70%;
+// Mobile Nav
+.mobile-nav {
+  display: none;
 }
 
+
 // Blog & Contact 
-// Logo
+  // Logo
 .blog nav,
 .contact nav {
   display: flex;
@@ -39,7 +46,7 @@ h1 {
 
 .nav-logo {
   align-self: flex-end;
-  width: 300px;
+  max-width: 225px;
   padding-top: 20px;
 }
 

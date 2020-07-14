@@ -1,0 +1,181 @@
+// Small Screens
+@media (max-width: 1100px) {
+
+  .blog {
+    .sidebar {
+      margin: 0;
+
+      .sidebar-text-container {
+        left: 5px;
+      }
+    }
+
+    .user-comment {
+      width: 70%;
+    }
+  }
+  // End of Query
+}
+
+
+// Tablets / Small Screens
+@media (max-width: 900px) {
+
+  .blog {
+    .blog-image-container {
+      padding: 0;
+      border: 80px solid $secondary;
+
+      img {
+        box-shadow: none;
+      }
+    }
+
+    .blog-text-container {
+      border-top: 25px solid $shadow;
+      padding-left: 0;
+      box-shadow: none;
+    }
+
+    aside {
+      display: flex;
+      min-width: 90%;
+
+      position: relative;
+      bottom: 100px;
+
+      .sidebar-image-container img {
+        box-shadow: none;
+        min-height: 297.6px;
+        object-fit: cover;
+      }
+
+      .sidebar-text-container {
+        position: static;
+      }
+    }
+
+    form {
+      width: 80%;
+
+      input::placeholder,
+      textarea::placeholder {
+        font-size: 1.6rem;
+      }
+    }
+    // End of .blog
+  }
+// End of Query
+}
+
+// Tablets / Big Mobile
+@media (max-width: 706px) {
+
+  .blog {
+
+    header {
+      height: 50vh;
+    }
+
+    .flex-container {
+      display: block;
+    }
+
+    .blog-image-container {
+      border: 30px solid $secondary;
+    }
+
+    aside {
+      width: 100%;
+      display: block;
+    }
+
+    .sidebar-image-container {
+      padding:  50px 100px;
+      margin: 0 auto;
+    }
+
+    .sidebar-text-container {
+      width: 100%;
+      padding: 20px 0 40px 20px;
+      margin-bottom: -40px;
+    }
+
+    .user-comment {
+      width: 80%;
+    }
+
+    .user-image-container {
+      width: 50px;
+    }
+
+    .comments .flex-container:first-of-type {
+	    padding-bottom: 40px;
+    }
+
+    form {
+      width: 100%;
+    }
+
+    .comments {
+      padding-bottom: 40px;
+    }
+
+    // End of .blog
+  }
+// End of Query
+}
+
+
+// Mobile
+@media (max-width: 500px) {
+
+  .blog {
+
+    .comments p,
+    .blog-text-container p {
+      line-height: 2.5rem;
+    }
+
+    .blog-image-container {
+      border: 10px solid $secondary;
+    }
+
+
+    .sidebar-image-container {
+      padding:  30px 40px;
+      margin: 0 auto;
+    }
+
+
+    .user-comment {
+      padding-left: 20px;
+    }
+
+    .user-image-container {
+      margin-top: -10px;
+    }
+
+    form {
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        padding-left: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        padding-bottom: 10px;
+      }
+
+
+      input::placeholder,
+      textarea::placeholder {
+        font-size: 1.3rem;
+      }
+    }
+
+  }
+
+  // End of Query
+}

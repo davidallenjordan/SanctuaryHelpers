@@ -1,6 +1,13 @@
 .copyright {
   background: $typo;
   text-align: center;
+
+  a {
+    &:hover,
+    &:focus {
+      color: $shadow;
+    }
+  }
 }
 
 form {
@@ -43,20 +50,11 @@ form {
     border: 2px solid $button;
     padding-bottom: 150px;
     margin: 40px 0;
-
   }
 
   .btn {
     border: none;
   }
 
-
-
-
-
-
-
-
-
-
+// End of form
 }
